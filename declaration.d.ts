@@ -1,0 +1,13 @@
+declare module "*multer";
+declare module "*express";
+declare module "*streamifier";
+declare module "*cloudinary";
+declare module "*@sendgrid/mail";
+declare module "*nodemailer";
+declare module "*bcrypt";
+declare module "*jsonwebtoken";
+declare module "*ejs";
+declare module "*crypto";
+declare module "*cors";
+declare module "*path";
+declare module "*sendgrid";
