@@ -72,6 +72,18 @@ const msg = {
 </container>`,
 };
 
+app.get("/", (req, res) => {
+  if (process.env.API_KEY !== "") {
+    return res
+      .status(200)
+      .json({ message: "Ready to Start with complete Doc..." });
+  } else {
+    return res
+      .status(200)
+      .json({ message: "Ready to Start with Empty file..." });
+  }
+});
+
 app.post("/message", (req, res) => {
   let result;
   sendgrid
